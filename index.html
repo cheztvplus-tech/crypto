@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEZ TV+ - Crypto Payment</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{background:#0a0a0a;color:#fff;font-family:Arial,sans-serif;padding:20px;line-height:1.6;}
+        .container{max-width:800px;margin:auto;}
+        .header{text-align:center;margin-bottom:30px;}
+        .header h1{color:#00b3b3;font-size:28px;}
+        .header p{color:#888;margin-top:10px;}
+        .lang-switch{text-align:center;margin-bottom:20px;}
+        .lang-switch button{background:#222;color:#fff;border:1px solid #333;padding:8px 20px;margin:0 5px;cursor:pointer;border-radius:4px;}
+        .lang-switch button.active{background:#00b3b3;color:#fff;}
+        .section{display:none;background:#111;padding:25px;border-radius:12px;margin-bottom:20px;}
+        .section.active{display:block;}
+        .plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin-top:20px;}
+        .plan-card{background:#1a1a1a;padding:15px;border-radius:8px;border-left:3px solid #00b3b3;transition:transform 0.2s;}
+        .plan-card:hover{transform:translateY(-3px);background:#222;}
+        .plan-card.trial{border-left-color:#ff9800;}
+        .plan-card.y1{border-left-color:#00b3b3;}
+        .plan-card.y2{border-left-color:#9c27b0;}
+        .plan-card.y4{border-left-color:#4caf50;}
+        .plan-name{font-weight:bold;font-size:16px;margin-bottom:5px;}
+        .plan-desc{color:#888;font-size:13px;margin-bottom:10px;}
+        .pay-btn{display:block;width:100%;padding:12px;background:#00b3b3;color:#fff;text-align:center;text-decoration:none;border-radius:6px;font-weight:bold;margin-top:10px;}
+        .pay-btn:hover{background:#008f8f;}
+        .disclaimer{margin-top:30px;padding:20px;background:#331111;border-radius:8px;border-left:4px solid #ff4444;color:#ff9999;font-size:13px;}
+        .disclaimer strong{color:#ff4444;}
+        .back-link{display:block;text-align:center;margin-top:20px;color:#00b3b3;text-decoration:none;}
+        .back-link:hover{text-decoration:underline;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📺 CHEZ TV+</h1>
+            <p>Cryptocurrency Payment</p>
+        </div>
+
+        <div class="lang-switch">
+            <button class="active" onclick="showLang('en')">English</button>
+            <button onclick="showLang('fr')">Français</button>
+        </div>
+
+        <!-- ENGLISH VERSION -->
+        <div id="en" class="section active">
+            <h2>Select Your Plan</h2>
+            <div class="plan-grid">
+                <div class="plan-card trial">
+                    <div class="plan-name">36h Trial</div>
+                    <div class="plan-desc">$15 - Test before you commit</div>
+                    <a href="https://pay.oxapay.com/11166441" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y1">
+                    <div class="plan-name">1 Year - 1 Device</div>
+                    <div class="plan-desc">$90</div>
+                    <a href="https://pay.oxapay.com/18089075" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y1">
+                    <div class="plan-name">1 Year - 2 Devices</div>
+                    <div class="plan-desc">$140</div>
+                    <a href="https://pay.oxapay.com/16570458" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y1">
+                    <div class="plan-name">1 Year - 3 Devices</div>
+                    <div class="plan-desc">$200</div>
+                    <a href="https://pay.oxapay.com/18665291" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y1">
+                    <div class="plan-name">1 Year - 4 Devices</div>
+                    <div class="plan-desc">$250</div>
+                    <a href="https://pay.oxapay.com/10187944" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y1">
+                    <div class="plan-name">1 Year - 5 Devices</div>
+                    <div class="plan-desc">$300</div>
+                    <a href="https://pay.oxapay.com/13773070" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y2">
+                    <div class="plan-name">2 Years - 1 Device</div>
+                    <div class="plan-desc">$120</div>
+                    <a href="https://pay.oxapay.com/10807039" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y2">
+                    <div class="plan-name">2 Years - 2 Devices</div>
+                    <div class="plan-desc">$210</div>
+                    <a href="https://pay.oxapay.com/10514719" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y2">
+                    <div class="plan-name">2 Years - 3 Devices</div>
+                    <div class="plan-desc">$300</div>
+                    <a href="https://pay.oxapay.com/18480473" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y2">
+                    <div class="plan-name">2 Years - 4 Devices</div>
+                    <div class="plan-desc">$390</div>
+                    <a href="https://pay.oxapay.com/11321582" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y2">
+                    <div class="plan-name">2 Years - 5 Devices</div>
+                    <div class="plan-desc">$475</div>
+                    <a href="https://pay.oxapay.com/18438409" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y4">
+                    <div class="plan-name">4 Years - 1 Device</div>
+                    <div class="plan-desc">$200</div>
+                    <a href="https://pay.oxapay.com/18649683" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y4">
+                    <div class="plan-name">4 Years - 2 Devices</div>
+                    <div class="plan-desc">$350</div>
+                    <a href="https://pay.oxapay.com/16682755" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y4">
+                    <div class="plan-name">4 Years - 3 Devices</div>
+                    <div class="plan-desc">$470</div>
+                    <a href="https://pay.oxapay.com/15959777" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y4">
+                    <div class="plan-name">4 Years - 4 Devices</div>
+                    <div class="plan-desc">$620</div>
+                    <a href="https://pay.oxapay.com/18844326" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+                <div class="plan-card y4">
+                    <div class="plan-name">4 Years - 5 Devices</div>
+                    <div class="plan-desc">$740</div>
+                    <a href="https://pay.oxapay.com/11023950" class="pay-btn" target="_blank">Pay with Crypto</a>
+                </div>
+            </div>
+            
+            <div class="disclaimer">
+                <strong>⚠️ IMPORTANT DISCLAIMER:</strong><br>
+                Cryptocurrency transactions are irreversible. We are NOT RESPONSIBLE if you send funds to the wrong address, wrong network, or wrong amount. 
+                Always verify the payment details on the OxaPay page before confirming. Send a small test amount first if you are unsure. 
+                By proceeding with payment, you accept full responsibility for the transaction.
+            </div>
+            
+            <a href="#" class="back-link">← Back to main site</a>
+        </div>
+
+        <!-- FRENCH VERSION -->
+        <div id="fr" class="section">
+            <h2>Choisissez votre forfait</h2>
+            <div class="plan-grid">
+                <div class="plan-card trial">
+                    <div class="plan-name">Essai 36h</div>
+                    <div class="plan-desc">15 $ - Testez avant de vous engager</div>
+                    <a href="https://pay.oxapay.com/11166441" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y1">
+                    <div class="plan-name">1 An - 1 Appareil</div>
+                    <div class="plan-desc">90 $</div>
+                    <a href="https://pay.oxapay.com/18089075" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y1">
+                    <div class="plan-name">1 An - 2 Appareils</div>
+                    <div class="plan-desc">140 $</div>
+                    <a href="https://pay.oxapay.com/16570458" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y1">
+                    <div class="plan-name">1 An - 3 Appareils</div>
+                    <div class="plan-desc">200 $</div>
+                    <a href="https://pay.oxapay.com/18665291" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y1">
+                    <div class="plan-name">1 An - 4 Appareils</div>
+                    <div class="plan-desc">250 $</div>
+                    <a href="https://pay.oxapay.com/10187944" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y1">
+                    <div class="plan-name">1 An - 5 Appareils</div>
+                    <div class="plan-desc">300 $</div>
+                    <a href="https://pay.oxapay.com/13773070" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y2">
+                    <div class="plan-name">2 Ans - 1 Appareil</div>
+                    <div class="plan-desc">120 $</div>
+                    <a href="https://pay.oxapay.com/10807039" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y2">
+                    <div class="plan-name">2 Ans - 2 Appareils</div>
+                    <div class="plan-desc">210 $</div>
+                    <a href="https://pay.oxapay.com/10514719" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y2">
+                    <div class="plan-name">2 Ans - 3 Appareils</div>
+                    <div class="plan-desc">300 $</div>
+                    <a href="https://pay.oxapay.com/18480473" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y2">
+                    <div class="plan-name">2 Ans - 4 Appareils</div>
+                    <div class="plan-desc">390 $</div>
+                    <a href="https://pay.oxapay.com/11321582" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y2">
+                    <div class="plan-name">2 Ans - 5 Appareils</div>
+                    <div class="plan-desc">475 $</div>
+                    <a href="https://pay.oxapay.com/18438409" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y4">
+                    <div class="plan-name">4 Ans - 1 Appareil</div>
+                    <div class="plan-desc">200 $</div>
+                    <a href="https://pay.oxapay.com/18649683" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y4">
+                    <div class="plan-name">4 Ans - 2 Appareils</div>
+                    <div class="plan-desc">350 $</div>
+                    <a href="https://pay.oxapay.com/16682755" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y4">
+                    <div class="plan-name">4 Ans - 3 Appareils</div>
+                    <div class="plan-desc">470 $</div>
+                    <a href="https://pay.oxapay.com/15959777" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y4">
+                    <div class="plan-name">4 Ans - 4 Appareils</div>
+                    <div class="plan-desc">620 $</div>
+                    <a href="https://pay.oxapay.com/18844326" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+                <div class="plan-card y4">
+                    <div class="plan-name">4 Ans - 5 Appareils</div>
+                    <div class="plan-desc">740 $</div>
+                    <a href="https://pay.oxapay.com/11023950" class="pay-btn" target="_blank">Payer en crypto</a>
+                </div>
+            </div>
+            
+            <div class="disclaimer">
+                <strong>⚠️ AVIS IMPORTANT :</strong><br>
+                Les transactions en cryptomonnaie sont irréversibles. Nous ne sommes PAS RESPONSABLES si vous envoyez des fonds à la mauvaise adresse, sur le mauvais réseau, ou le mauvais montant. 
+                Vérifiez toujours les détails de paiement sur la page OxaPay avant de confirmer. Envoyez un petit montant de test d'abord si vous n'êtes pas sûr. 
+                En procédant au paiement, vous acceptez l'entière responsabilité de la transaction.
+            </div>
+            
+            <a href="#" class="back-link">← Retour au site principal</a>
+        </div>
+    </div>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+            document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
