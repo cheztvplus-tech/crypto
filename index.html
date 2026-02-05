@@ -8,7 +8,7 @@
         *{margin:0;padding:0;box-sizing:border-box;}
         body{background:#0a0a0a;color:#fff;font-family:Arial,sans-serif;padding:20px;line-height:1.6;}
         .container{max-width:800px;margin:auto;}
-        .header{text-align:center;margin-bottom:30px;}
+        .header{text-align:center;margin-bottom:20px;}
         .header h1{color:#00b3b3;font-size:28px;}
         .header p{color:#888;margin-top:10px;}
         .lang-switch{text-align:center;margin-bottom:20px;}
@@ -27,8 +27,9 @@
         .plan-desc{color:#888;font-size:13px;margin-bottom:10px;}
         .pay-btn{display:block;width:100%;padding:12px;background:#00b3b3;color:#fff;text-align:center;text-decoration:none;border-radius:6px;font-weight:bold;margin-top:10px;}
         .pay-btn:hover{background:#008f8f;}
-        .disclaimer{margin-top:30px;padding:20px;background:#331111;border-radius:8px;border-left:4px solid #ff4444;color:#ff9999;font-size:13px;}
+        .disclaimer{margin:20px 0;padding:20px;background:#331111;border-radius:8px;border-left:4px solid #ff4444;color:#ff9999;font-size:13px;}
         .disclaimer strong{color:#ff4444;}
+        .warning-icon{color:#ff4444;font-weight:bold;margin-right:5px;}
         .back-link{display:block;text-align:center;margin-top:20px;color:#00b3b3;text-decoration:none;}
         .back-link:hover{text-decoration:underline;}
     </style>
@@ -47,6 +48,15 @@
 
         <!-- ENGLISH VERSION -->
         <div id="en" class="section active">
+            <!-- TOP DISCLAIMER -->
+            <div class="disclaimer">
+                <span class="warning-icon">⚠️</span>
+                <strong>IMPORTANT DISCLAIMER:</strong><br>
+                Cryptocurrency transactions are irreversible. We are <strong>NOT RESPONSIBLE</strong> if you send funds to the wrong address, wrong network, or wrong amount. 
+                Always verify the payment details on the OxaPay page before confirming. Send a small test amount first if you are unsure. 
+                By proceeding with payment, you accept full responsibility for the transaction.
+            </div>
+
             <h2>Select Your Plan</h2>
             <div class="plan-grid">
                 <div class="plan-card trial">
@@ -131,9 +141,11 @@
                 </div>
             </div>
             
+            <!-- BOTTOM DISCLAIMER -->
             <div class="disclaimer">
-                <strong>⚠️ IMPORTANT DISCLAIMER:</strong><br>
-                Cryptocurrency transactions are irreversible. We are NOT RESPONSIBLE if you send funds to the wrong address, wrong network, or wrong amount. 
+                <span class="warning-icon">⚠️</span>
+                <strong>IMPORTANT DISCLAIMER:</strong><br>
+                Cryptocurrency transactions are irreversible. We are <strong>NOT RESPONSIBLE</strong> if you send funds to the wrong address, wrong network, or wrong amount. 
                 Always verify the payment details on the OxaPay page before confirming. Send a small test amount first if you are unsure. 
                 By proceeding with payment, you accept full responsibility for the transaction.
             </div>
@@ -143,6 +155,15 @@
 
         <!-- FRENCH VERSION -->
         <div id="fr" class="section">
+            <!-- TOP DISCLAIMER -->
+            <div class="disclaimer">
+                <span class="warning-icon">⚠️</span>
+                <strong>AVIS IMPORTANT :</strong><br>
+                Les transactions en cryptomonnaie sont irréversibles. Nous ne sommes <strong>PAS RESPONSABLES</strong> si vous envoyez des fonds à la mauvaise adresse, sur le mauvais réseau, ou le mauvais montant. 
+                Vérifiez toujours les détails de paiement sur la page OxaPay avant de confirmer. Envoyez un petit montant de test d'abord si vous n'êtes pas sûr. 
+                En procédant au paiement, vous acceptez l'entière responsabilité de la transaction.
+            </div>
+
             <h2>Choisissez votre forfait</h2>
             <div class="plan-grid">
                 <div class="plan-card trial">
@@ -227,9 +248,11 @@
                 </div>
             </div>
             
+            <!-- BOTTOM DISCLAIMER -->
             <div class="disclaimer">
-                <strong>⚠️ AVIS IMPORTANT :</strong><br>
-                Les transactions en cryptomonnaie sont irréversibles. Nous ne sommes PAS RESPONSABLES si vous envoyez des fonds à la mauvaise adresse, sur le mauvais réseau, ou le mauvais montant. 
+                <span class="warning-icon">⚠️</span>
+                <strong>AVIS IMPORTANT :</strong><br>
+                Les transactions en cryptomonnaie sont irréversibles. Nous ne sommes <strong>PAS RESPONSABLES</strong> si vous envoyez des fonds à la mauvaise adresse, sur le mauvais réseau, ou le mauvais montant. 
                 Vérifiez toujours les détails de paiement sur la page OxaPay avant de confirmer. Envoyez un petit montant de test d'abord si vous n'êtes pas sûr. 
                 En procédant au paiement, vous acceptez l'entière responsabilité de la transaction.
             </div>
