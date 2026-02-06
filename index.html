@@ -151,7 +151,7 @@
                 By proceeding with payment, you accept full responsibility for the transaction.
             </div>
             
-            <a href="#" class="back-link">← Back to main site</a>
+            <button onclick="closeWindow()" class="close-btn">✕ Close</button>
         </div>
 
         <!-- FRENCH VERSION -->
@@ -258,7 +258,7 @@
                 En procédant au paiement, vous acceptez l'entière responsabilité de la transaction.
             </div>
             
-            <a href="#" class="back-link">← Retour au site principal</a>
+            <button onclick="closeWindow()" class="close-btn">✕ Fermer</button>
         </div>
     </div>
 
@@ -269,9 +269,17 @@
             document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
             event.target.classList.add('active');
         }
+        function closeWindow() {
+            window.close();
+            // Fallback: if window wasn't opened by script, redirect to main site
+            setTimeout(function() {
+                window.location.href = 'https://sites.google.com/view/cheztv';
+            }, 100);
+        }
     </script>
 </body>
 </html>
+
 
 
 
